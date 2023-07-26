@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal</title>
+    <script src="script.js" type="text/javascript" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+<main>
+    <div class="header"> bash - Selin Pir Portfolyo </div>
+
+    <div class="terminal" id="terminalWindow" >
+        <section id="terminal">
+          <div class="command">Successful login - <span class="error" id="date"></span></div>
+          <div class="title">Portfolyom</div>
+          Portföyüme hoş geldiniz, komutların listesini görmek için giriş yapın. <span class="command">help</span>
+        </section>
+        <div class="prompt">
+            <span class="command">$</span> <span class="title">gestuser</span> <input id="promtInput"/>
+          </div>
+        </div>
+        <div class="hidden" id="promptClone">
+            <span class="command">$</span> <span class="title">gestuser</span> <span class="promtCloneInput"></span>
+            <div class="promtCloneContent"></div>
+          </div>
+        
+</main>
+
+<div class="hidden" id="promptClone">
+    <span class="command">$</span> <span class="title">gestuser</span> <span class="promtCloneInput"></span>
+    <div class="promtCloneContent"></div>
+  </div>
+
+  <div class="hidden" id="help">
+    <div class="sectionTitle">Bu komutlardan herhangi birini girebilirsiniz:: </div>
+    <div class="indent">
+      <div>
+        <span class="command">about</span>:
+        <div class="indent">Hakkımda</div> 
+      </div>
+      <div>
+        <span class="command">social</span>:
+        <div class="indent">Sosyal ağlarımın listesi</div> 
+      </div>
+      <div>
+        <span class="command">skills</span>:
+        <div class="indent">Birlikte çalıştığım araçlar</div> 
+      </div>
+      <div>
+        <span class="command">education</span>:
+        <div class="indent">Eğitimimle ilgili</div> 
+      </div>
+      <div>
+        <span class="command">projects</span>:
+        <div class="indent">Projelerimin bir listesi</div> 
+      </div>
+      <div>
+        <span class="command">clear</span>:
+        <div class="indent">Terminal geçmişini temizle</div> 
+      </div>
+    </div>
+  </div>
+
+
+  <div class="hidden" id="projects">
+    <div class="sectionTitle">Projelerim </div>
+    <div class="indent">
+      <span class="title">Proje 1 </span> - <a href="https://github.com/selinpir/ledaflix-dizi-takip-uygulamasi" target="_blank"><span class="command">Link a github</span> </a>
+    </div>
+    <div class="indent">
+      <span class="title">Proje 2 </span> - <a href="https://github.com/selinpir/leda-hotel" target="_blank"><span class="command">Link a github</span> </a>
+    </div>
+    <div class="indent">
+      <span class="title">Proje 3 </span> - <a href="https://github.com/selinpir/leda-analog" target="_blank"><span class="command">Link a github</span> </a>
+    </div>
+  </div>
+
+  <div class="hidden" id="skills">
+    <div class="sectionTitle">Yetenekler: </div>
+    <div class="indent">
+      <div>
+        <span class="command">Programlama</span>:
+        <div class="indent">
+          <span class="title">C</span>
+          <span class="title">C#</span>
+          <span class="title">CSS</span>
+          <span class="title">HTML</span>
+          <span class="title">GIT</span>
+        </div> 
+      </div>
+     
+      <div>
+        <span class="command">Diller</span>:
+        <div class="indent">
+          <span class="title">İngilizce</span>
+        
+        </div> 
+      </div>
+    </div>
+  </div>
+
+  <div class="hidden" id="about">
+    <div class="sectionTitle">Hakkımda: </div>
+      <div class="indent">
+        Merhaba! Ben <span class="command">Selin Pir </span>
+        "Ben kimim?" sorusunun paradoksu şudur: Asla bilemeyiz ama sürekli olarak öğreniriz.
+      </div> 
+  </div>
+
+   <div class="hidden" id="social">
+      <div class="sectionTitle">Sosyal </div>
+      <div class="indent">
+        <span class="title">Github </span> - <a href="https://github.com/selinpir?tab=repositories" target="_blank"><span class="command">Github</span> </a>
+      </div>
+      <div class="indent">
+        <span class="title">LinkedIn </span> - <a href="https://www.linkedin.com/in/selin-pir/" target="_blank"><span class="command">LinkedIn</span> </a>
+      </div>
+      <div class="indent">
+        <span class="title">Instagram </span> - <a href="https://www.instagram.com/seliinpir" target="_blank"><span class="command">Instagram</span> </a>
+      </div>
+      <div class="indent">
+        <span class="title">BlueSky </span> - <a href="https://bsky.app/profile/selinpir.bsky.social" target="_blank"><span class="command">BlueSky</span> </a>
+      </div>
+      <div class="indent">
+        <span class="title">CV </span> - <a href="C:\Users\selin\OneDrive\Masaüstü\IT\CV\cv_selinpir.pdf" target="_blank"><span class="command">CV göz at -></span> </a>
+      </div>
+  
+    
+    </div>
+
+    <div class="education hidden" id="education">
+      <div class="sectionTitle">Eğitim: </div>
+      <div class="indent">
+        <span class="title">Yönetim Bilişim Sistemleri - Pamukkale Üniversitesi</span> <span class="command">Bitiş yılı 2026</span>
+        <div class="indent">
+            Yönetim Bilişim Sistemleri (YBS), işletmelerde ve organizasyonlarda bilgi teknolojilerinin etkin ve verimli bir şekilde kullanılmasını sağlayan bir bölümdür. Bu bölüm, işletmelerin ihtiyaç duyduğu bilgi sistemlerinin tasarımı, geliştirilmesi, uygulanması, yönetilmesi ve değerlendirilmesiyle ilgilenir.
+        </div> 
+      </div>
+      </div>
+    </div>
+  
+
+</body>
+</html>
